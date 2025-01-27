@@ -1,0 +1,75 @@
+/* Background Gelap */
+body {
+  background: linear-gradient(135deg, #55ca1a 0%, #000000 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Card Styling */
+.card {
+  background: rgba(22, 152, 48, 0.85); /* Warna gelap dengan transparansi */
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Foto Profil Container */
+.profile-pic-container {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid #2aa21d; /* Warna biru terang */
+  transition: border 0.3s ease;
+}
+
+/* Foto Profil */
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+/* Tombol Selamat Datang */
+.btn-primary {
+  background-color: #40b11a; /* Warna biru terang */
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #299d08;
+  transform: translateY(-2px);
+}
+
+/* Responsif */
+@media (max-width: 576px) {
+  .profile-pic-container {
+      width: 120px;
+      height: 120px;
+      border-width: 3px;
+  }
+  
+  .card {
+      padding: 15px;
+  }
+  
+  .card-title {
+      font-size: 1.5rem;
+  }
+  
+  .card-text {
+      font-size: 1rem;
+  }
+}
